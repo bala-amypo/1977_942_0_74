@@ -6,24 +6,14 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-// @Table(name="students")
 public class Stuentity{
-    @Id 
+    @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String email;
     private float cgpa;
 
-    public Stuentity(int id, String name, String email, float cgpa) {
-        this.id = id;
-        this.name = name;
-        this.email = email;
-        this.cgpa = cgpa;
-    }
-    public Stuentity() {
-       demo/src/main
-    }
     public Long getId(){
         return id;
     }
@@ -36,17 +26,26 @@ public class Stuentity{
     public void setName(String name){
         this.name=name;
     }
-    public String getEmail(){
+     public String getEmail(){
         return email;
     }
-    public void setEmail(String email){
+    public void setEmail(String email ){
         this.email=email;
     }
-    public float getCgpa(){
+     public float getcgpa(){
         return cgpa;
     }
-    public void setCgpa(String cgpa){
+    public void setcgpa(float cgpa){
         this.cgpa=cgpa;
     }
+    public Stuentity(Long id, String name,String email, float cgpa){
+        this.id=id;
+        this.name=name;
+        this.email=email;
+        this.cgpa=cgpa;
 
+    }
+    public Stuentity(){
+        
+    }
 }
