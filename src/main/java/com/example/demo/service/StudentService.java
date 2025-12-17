@@ -3,6 +3,6 @@ package com.example.demo.service;
 
 public interface StudentService {
 
-Stuentity saveStudent(Stuentity student);
+Stuentity saveStudent(Stuentity stuentity);
 
 }
