@@ -21,7 +21,7 @@ public class Stuentity{
         this.cgpa = cgpa;
     }
     public Stuentity() {
-       
+       demo/src/main
     }
     public Long getId(){
         return id;
