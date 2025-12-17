@@ -1,7 +1,7 @@
 package com.example.demo.Serviceimpl;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;`
+import org.springframework.stereotype.Service;
 
 import com.example.demo.entity.Stuentity;
 import com.example.demo.service.StudentRepository;
@@ -14,6 +14,6 @@ public class StudentServiceImple implements StudentService {
  StudentRepository studentRepository;
 
  public Stuentity saveStudent(Stuentity stuentity){
-    return studentRepository.save(stuentity)
+    return studentRepository.save(stuentity);
  }
 }
